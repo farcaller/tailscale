@@ -88,9 +88,9 @@ The Tailscale API v2 does not currently support pagination. All results are retu
 
 # APIs 
 
-**[Devices](#dns-post-nameservers-request-removing-magic-on)**
-- [`GET` device](JULIA)
-- [`DELETE` device](JULIA)
+**[Devices](#devices)**
+- [`GET` device](#get-device)
+- [`DELETE` device](#delete-device)
 - Routes
   - [`GET` device routes](JULIA)
   - [`POST` device routes](JULIA)
@@ -122,9 +122,7 @@ The Tailscale API v2 does not currently support pagination. All results are retu
   - [`GET` tailnet DNS search paths](JULIA)
   - [`POST` tailnet DNS search paths](JULIA)
 
-<a name="device"></a>
-
-# Device 
+# Device  {#devices}
 
 <!-- WILL REMINDER TO ADD WHICH SCOPES ARE REQUIRED FOR EACH ENDPOINT AT THE END OF PROJECT; TO DISCUSS NEXT TO EACH METHOD-->
 
@@ -364,7 +362,7 @@ The Devices endpoint exposes two methods for dealing with subnet routes:
 - [`GET /api/v2/device/{deviceID}/routes`](#fetch-device-routes) to fetch lists of advertised and enabled routes for a device
 - [`POST /api/v2/device/{deviceID}/routes`](#set-enabled-subnet-routes-for-a-device) to set enabled routes for a device
 
-<a name="device-get-device"></a>
+<a name="get-device"></a>
 
 ## Fetch the details for a device 
 
